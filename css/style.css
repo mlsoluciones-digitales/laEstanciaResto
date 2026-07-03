@@ -152,7 +152,7 @@ p{
 /*Frase Elegante*/
 
 .fraseElegante{
-    background-color: rgb(228, 224, 224);
+    background-color: #F1DDBF;
 }
 
 .fraseElegante p{
@@ -167,12 +167,12 @@ p{
 /*Frase Elegante 2*/
 
 .fraseElegante2{
-    background-color: rgb(0, 0, 0);
+    background-color: #F1DDBF;
 }
 
 .fraseElegante2 p{
     font-family: "Great Vibes", cursive;
-    color: white;
+    color: black;
     font-size: 3rem;
     text-align: center;
 }
@@ -279,4 +279,56 @@ p{
 .infoMenuDescPlato, .infoMenuDescPlato2 {
     font-size: 0.8rem;
     font-style: oblique;
+}
+
+/*Reservas*/
+
+#reservas{
+    background-image: url(/image/reservas.png);
+    background-attachment: fixed;
+}
+
+.contenedorFormulario{
+    padding: 2rem 10rem;
+}
+
+.formReserva {
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 3rem;
+}
+
+.contenedorReservas p{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.formReserva .field{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formReserva input{
+    background-color: #F1DDBF;
+    color: black;
+    border: #F1DDBF;
+}
+
+.contenedorBoton {
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.button {
+    background-color: #C89B3C;
+    font-family: "Libre Caslon Text", serif;
+    color: white;
+}
+
+.button:hover{
+    color: black;
 }
