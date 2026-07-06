@@ -429,3 +429,22 @@ p{
 .button:hover{
     color: black;
 }
+
+@media (max-width: 768px) {
+    .contenedorFormulario{
+        padding: 2rem 1rem;
+    }
+
+    .contenedorFormulario p{
+        font-size: 1.2rem;
+    }
+
+    .contenedorFormulario h2{
+        font-size: 2rem;
+    }
+
+    .formReserva{
+        width: 100%;
+    }
+
+}
