@@ -107,6 +107,13 @@ p{
     color: #F1DDBF;
 }
 
+@media (max-width: 768px ) {
+    .containerHero{
+        margin-left: 1rem;   
+    }
+}
+
+
 /*Historia*/
 
 #historia{
@@ -129,7 +136,7 @@ p{
 
 .contenedorVacio{
     border:black solid 20px;
-    
+    background: rgba(255, 255, 255, 0.15);
 }
 
 #historia p{
@@ -140,10 +147,36 @@ p{
     gap: 0;
 }
 
+
+@media (max-width: 768px) {
+    #historia .grid{
+        display: block;
+    }
+    .contenedorVacio{
+        display: none;
+    }
+    .contenedorHistoria{
+        background: rgba(255, 255, 255, 0.10);
+    }
+    .contenedorHistoria h2{
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+    
+}
+
+
+
 /*Panoramica Salon*/
 
 #panoramicaSalon{
     background-color: black;
+}
+
+@media (max-width: 768px) {
+    #panoramicaSalon{
+        border: 10px solid black;
+    }
 }
 
 
@@ -161,7 +194,11 @@ p{
     text-align: center;
 }
 
-
+@media (max-width: 768px) {
+    .fraseElegante p{
+        font-size: 2rem;
+    }
+}
 
 /*Frase Elegante 2*/
 
@@ -174,6 +211,12 @@ p{
     color: black;
     font-size: 3rem;
     text-align: center;
+}
+
+@media (max-width: 768px ) {
+    .fraseElegante2 p{
+        font-size: 2rem;
+    }
 }
 
 /*Locales*/
@@ -239,6 +282,30 @@ p{
 .locales .local-card div{
     background-color: #F1DDBF;
 }
+
+
+@media (max-width: 768px) {
+    .contenedor-locales{
+        display: block;
+    }
+
+    .contenedor-locales .local-card{
+        margin: 1rem ;
+    }
+
+    .contenedor-locales-titulo h2,
+    .contenedor-locales-titulo h4 {
+        font-size: 2rem;
+    }
+
+    .contenedor-locales h4{
+        font-size: 1.5rem;
+    }
+
+}
+
+
+
 
 /*Menú*/
 
