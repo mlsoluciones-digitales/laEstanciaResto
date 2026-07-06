@@ -8,12 +8,6 @@ html{
     scroll-behavior: smooth;
 }
 
-/*body{
-    background-image: url(/image/backgroundPlatosBN.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}*/
 
 h1{
     font-family: "Libre Caslon Text", serif;
@@ -24,7 +18,7 @@ h1{
 h2{
     font-family: "Libre Caslon Text", serif;
     font-size: 3rem;
-    color: white;
+    color: #F1DDBF;
 }
 
 h4{
@@ -35,13 +29,13 @@ h4{
 h6 {
     font-family: "Libre Caslon Text", serif;
     font-size: 1rem;
-    color: white;
+    color: #F1DDBF;
 }
 
 p{
     font-family: "Libre Caslon Text", serif;
     font-size: 1.3rem;
-    color: white;
+    color: #F1DDBF;
 }
 
 /*Navbar*/
@@ -54,13 +48,13 @@ p{
 .navbar{
     position: relative;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     background: rgba(77, 77, 77, 0.15);
     /*backdrop-filter: blur(12px);*/
 }
 
 .navbar-item {
-    color: white;
+    color: #F1DDBF;
     font-size: 1rem;
     font-weight: bold;
     font-family: "Libre Caslon Text", serif;
@@ -105,14 +99,18 @@ p{
     color: black;
 }
 
+.containerHero h1{
+    color: #F1DDBF;
+}
+
 .subtitle{
-    color: #F2F2F2;
+    color: #F1DDBF;
 }
 
 /*Historia*/
 
 #historia{
-    background-image: url("/image/backgroundPlatosBN.png");
+    background-image: url("/image/historia1.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -123,7 +121,8 @@ p{
     padding: 3rem;
 }
 
-.contenedorHistoria p, h2{
+.contenedorHistoria p, 
+.contenedorHistoria h2{
     text-align: center;
 }
 
@@ -199,8 +198,9 @@ p{
     padding-top: 4rem;
 }
 
-.contenedor-locales-titulo h2,h4{
-    color: white;
+.contenedor-locales-titulo h2,
+.contenedor-locales-titulo h4{
+    color: #F1DDBF;
 }
 
 .contenedor-locales .local-card{
@@ -243,11 +243,24 @@ p{
 /*Menú*/
 
 .menu{
-    background-color: black;
+    background-image: url(/image/menu.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.menu h4 {
+.tituloMenu{
+    padding-top: 3rem;
+}
+
+.tituloMenu h4{
     text-align: center;
+    color: #F1DDBF;
+}
+
+.tituloMenu h2{
+    text-align: center;
+    color: #F1DDBF;
 }
 
 .menuContainer{
@@ -262,6 +275,8 @@ p{
 
 .tarjetaMenu img, .tarjetaMenu2 img {
     border: solid 1px #C89B3C;
+    width: 100%;
+    display: block;
 } 
 
 .infoMenu{
@@ -279,6 +294,11 @@ p{
 .infoMenuDescPlato, .infoMenuDescPlato2 {
     font-size: 0.8rem;
     font-style: oblique;
+    color: white;
+}
+
+.infoMenuCateg{
+    color: #F1DDBF;
 }
 
 /*Reservas*/
@@ -287,17 +307,21 @@ p{
     background-image: url(/image/reservas.png);
     background-attachment: fixed;
 }
-
 .contenedorFormulario{
     padding: 2rem 10rem;
 }
 
-.formReserva {
+.contenedorFormulario h2{
+    text-align: center;
+}
+
+.formReserva{
+    width: 500px;
     margin-left: auto;
     margin-right: auto;
     background: rgba(255, 255, 255, 0.15);
     border-radius: 20px;
-    padding: 3rem;
+    padding: 2rem;
 }
 
 .contenedorReservas p{
@@ -307,26 +331,32 @@ p{
 }
 
 .formReserva .field{
-    width: 500px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.formReserva input{
+.formReserva input {
     background-color: #F1DDBF;
     color: black;
     border: #F1DDBF;
+    font-family: "Libre Caslon Text", serif;
 }
 
-.contenedorBoton {
+.formReserva label {
+    font-family: "Libre Caslon Text", serif;
+    color: #F1DDBF;
+}
+
+.contenedorBoton{
     text-align: center;
     padding-top: 1.5rem;
 }
 
-.button {
+.button{
     background-color: #C89B3C;
     font-family: "Libre Caslon Text", serif;
-    color: white;
+    color: #F1DDBF;
 }
 
 .button:hover{
