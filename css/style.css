@@ -110,7 +110,7 @@ p{
 /*Historia*/
 
 #historia{
-    background-image: url("/image/historia1.webp");
+    background-image: url("../image/historia1.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -179,7 +179,7 @@ p{
 /*Locales*/
 
 .locales {
-    background-image: url("/image/backgrounLocales.webp");
+    background-image: url("../image/backgrounLocales.webp");
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
@@ -243,7 +243,7 @@ p{
 /*Menú*/
 
 .menu{
-    background-image: url(/image/menu.webp);
+    background-image: url(../image/menu.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -304,7 +304,7 @@ p{
 /*Reservas*/
 
 #reservas{
-    background-image: url(/image/reservas.png);
+    background-image: url(../image/reservas.png);
     background-attachment: fixed;
 }
 .contenedorFormulario{
