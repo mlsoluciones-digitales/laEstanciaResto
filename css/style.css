@@ -368,6 +368,16 @@ p{
     color: #F1DDBF;
 }
 
+@media (max-width: 768px ) {
+       .tarjetaMenu, .tarjetaMenu2 {
+        display: block;
+       } 
+
+       .tarjetaMenu2 .infoMenu{
+        flex-direction: column-reverse;
+       }
+}
+
 /*Reservas*/
 
 #reservas{
@@ -447,4 +457,130 @@ p{
         width: 100%;
     }
 
+}
+
+.footerContactos{
+    background-image: url(../image/fondoFooter2.webp);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.footerContactos h4{
+    font-size: 1rem;
+    color: white;
+    padding-bottom: 1.5rem;
+}
+
+.footerContactos p{
+    font-size: 0.8rem;
+    color: white;
+    padding-bottom: 1rem;
+}
+
+.footerContactos i {
+    font-size: 1.5rem;
+    color: #C89B3C;
+    padding-bottom: 1rem;
+}
+
+.logoFooter h2 {
+    font-size: 2rem;
+}
+
+.logoFooter .parrillaLogo{
+    color: #C89B3C;
+    font-size: 0.7rem;
+}
+
+.logoFooter .saboresLogo{
+    font-style: oblique;
+}
+
+
+.columna{
+    flex:1;
+    padding:2rem;
+}
+
+.columna:not(:last-child){
+    border-right:1px solid rgba(216,178,110,.35);
+}
+
+.contenedorRedes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.footerBajo{
+    background-image: 
+        linear-gradient(
+            rgba(32, 20, 10, 0.75),
+            rgba(32, 20, 10, 0.95)),
+        url(../image/frenteEstancia.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+}
+
+.footerBajo div{
+    text-align: center;
+}
+
+.footerBajo h4{
+    color: #C89B3C;
+    padding-bottom: 1.5rem;
+} 
+
+.footerDerechos{
+    background-image: url(../image/fondoFooter2.webp);
+    padding: 2rem;
+}
+
+.footerDerechos div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerDerechos p{
+    font-size: .8rem;
+}
+
+.footerDerechos span{
+    color: #C89B3C;
+}
+
+@media (max-width: 768px ) {
+    .footerContactos{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .columna{
+        width: 100%;
+        border-bottom: 1px solid #C89B3C;
+        padding: 1rem 0;
+    }
+    
+    .columna:not(:last-child){
+        border-right:none;
+    }
+
+    .footerBajo h4 {
+        font-size: 1rem;
+    }
+
+    .footerBajo .button{
+        font-size: 1rem;
+    }
 }
