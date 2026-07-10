@@ -310,7 +310,10 @@ p{
 /*Menú*/
 
 .menu{
-    background-image: url(../image/menu.webp);
+    background-image: 
+    linear-gradient(rgba(48, 22, 1, 0.5)),
+    linear-gradient(rgba(0, 0, 0, 0.05)), 
+    url(../image/cocina.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -334,48 +337,36 @@ p{
     padding: 2rem;
 }
 
-.tarjetaMenu, .tarjetaMenu2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
+.contenedorButtonMenu{
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.tarjetaMenu img, .tarjetaMenu2 img {
-    border: solid 1px #C89B3C;
-    width: 100%;
-    display: block;
-} 
+.imagenMenu{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2rem;
+}
 
-.infoMenu{
+.imagenMenu img{
+    border: 1px solid #C89B3C;
+}
+
+.menuCarta{
+    padding: 2rem 16rem;
+}
+
+.descripcionMenu{
+    padding: 2rem;
+    background-color: rgba(241, 221, 191, 0.15);
+    border-radius: 20px;
     text-align: center;
 }
 
-.contenedorPlato{
-    margin-top: 1rem;
-}
-
-.infoMenuPlato, .infoMenuPlato2 {
-    font-size: 1rem;
-}
-
-.infoMenuDescPlato, .infoMenuDescPlato2 {
-    font-size: 0.8rem;
-    font-style: oblique;
-    color: white;
-}
-
-.infoMenuCateg{
-    color: #F1DDBF;
-}
-
-@media (max-width: 768px ) {
-       .tarjetaMenu, .tarjetaMenu2 {
-        display: block;
-       } 
-
-       .tarjetaMenu2 .infoMenu{
-        flex-direction: column-reverse;
-       }
+.platos{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /*Reservas*/
