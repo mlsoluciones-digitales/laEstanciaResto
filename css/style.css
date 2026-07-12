@@ -311,8 +311,8 @@ p{
 
 .menu{
     background-image: 
-    linear-gradient(rgba(48, 22, 1, 0.5)),
-    linear-gradient(rgba(0, 0, 0, 0.05)), 
+    /*linear-gradient(rgba(48, 22, 1, 0.5)),
+    linear-gradient(rgba(255, 255, 255, 0.05)),*/
     url(../image/cocina.webp);
     background-size: cover;
     background-repeat: no-repeat;
@@ -364,9 +364,50 @@ p{
     text-align: center;
 }
 
+.subtituloMenu{
+    font-size: 2rem;
+    text-align: center;
+}
+
 .platos{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+}
+
+.platos p{
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .menuCarta{
+    padding: 2rem 1rem;
+    }
+    .contenedorButtonMenu{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .tituloMenu h2,
+    .tituloMenu h4{
+        font-size: 2rem;
+    }
+
+    .subtituloMenu{
+        font-size: 1.5rem;
+    }
+    .platos p {
+        font-size: 0.8rem;
+    }
+    .imagenMenu {
+        width: 100%;   
+    }
+
+    .imagenMenu img {
+        border-radius: 20px;
+    }
+    .subtituloMenu {
+        padding-bottom: 1rem;
+    }
 }
 
 /*Reservas*/
