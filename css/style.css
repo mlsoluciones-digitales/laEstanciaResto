@@ -375,10 +375,9 @@ p{
 }
 
 .descripcionMenu{
-    padding: 2rem;
-    background-color: rgba(241, 221, 191, 0.15);
-    border-radius: 20px;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 2 1fr;
+    gap: 1rem;
 }
 
 .oculto{
@@ -388,6 +387,7 @@ p{
 .subtituloMenu{
     font-size: 2rem;
     text-align: center;
+    padding-bottom: 1rem;
 }
 
 
