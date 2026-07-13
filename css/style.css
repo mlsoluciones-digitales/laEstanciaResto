@@ -475,6 +475,10 @@ p{
     font-family: "Libre Caslon Text", serif;
 }
 
+.formReserva input::placeholder{
+    color: rgb(163, 160, 160); 
+}
+
 .formReserva label {
     font-family: "Libre Caslon Text", serif;
     color: #F1DDBF;
@@ -489,11 +493,13 @@ p{
     background-color: #C89B3C;
     font-family: "Libre Caslon Text", serif;
     color: #F1DDBF;
+    border-color: #C89B3C;
 }
 
 .button:hover{
     color: black;
 }
+
 
 @media (max-width: 768px) {
     .contenedorFormulario{
