@@ -76,6 +76,14 @@ p{
     color: black;
 }
 
+.navbar-burger{
+    color: #C89B3C;
+}
+
+.navbar-menu {
+    text-align: center; 
+}
+
 /*Hero*/
 
 .heroHome{
@@ -317,14 +325,12 @@ p{
 /*Menú*/
 
 .menu{
-    background-image: 
-    /*linear-gradient(rgba(48, 22, 1, 0.5)),
-    linear-gradient(rgba(255, 255, 255, 0.05)),*/
-    url(../image/cocina.webp);
+    background-image: url(../image/fondoMenu.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 
 .tituloMenu{
     padding-top: 3rem;
@@ -339,6 +345,7 @@ p{
     text-align: center;
     color: #F1DDBF;
 }
+
 
 .menuContainer{
     padding: 2rem;
@@ -360,6 +367,7 @@ p{
 
 .imagenMenu img{
     border: 1px solid #C89B3C;
+    border-radius: 20px;
 }
 
 .menuCarta{
@@ -373,10 +381,15 @@ p{
     text-align: center;
 }
 
+.oculto{
+    display: none;
+}
+
 .subtituloMenu{
     font-size: 2rem;
     text-align: center;
 }
+
 
 .platos{
     display: flex;
@@ -384,10 +397,11 @@ p{
 }
 
 .platos p{
-    font-size: 1rem;
+    font-size: 1rem;;
 }
 
 @media (max-width: 768px) {
+
     .menuCarta{
     padding: 2rem 1rem;
     }

@@ -20,12 +20,17 @@ botones.forEach(boton => {
 
 function mostrarMenu(categoria){
     const contenedor = document.querySelector(".descripcionMenu"); 
+    const subtitulo = document.querySelector(".subtituloMenu");
 
-    contenedor.innerHTML = ""; 
+    contenedor.classList.remove("oculto"); 
 
+    subtitulo.textContent = categoria.toUpperCase();
+    subtitulo.classList.remove("oculto");
+    
+    contenedor.innerHTML = "";  
+    
     menu.forEach(plato => {
         if(plato.categoria === categoria){
-            document.querySelector(".subtituloMenu").textContent = categoria.toUpperCase();
             contenedor.innerHTML += `
             <div class="platos">
                 <p>${plato.plato}</p>
@@ -33,6 +38,8 @@ function mostrarMenu(categoria){
             </div>
             `
         }
-})
+    }
+        
+)
 }
 
